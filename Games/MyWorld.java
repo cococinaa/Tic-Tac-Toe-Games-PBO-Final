@@ -95,7 +95,7 @@ public class MyWorld extends World
     private int searchBestPosition(int turn)
     {
         // Daftar kombinasi kemenangan yang mungkin
-        int[] cek = new int[]{0, 1, 2, 0, 2, 1, 1, 2, 0, 3, 4, 5, 3, 5, 4, 4, 5, 3, 6, 7, 8, 6, 8, 7, 7, 8, 6, 0, 3, 6, 0, 6, 3, 3, 6, 0, 1, 4, 7};
+        int[] cek = new int[]{0, 1, 2, 0, 2, 1, 1, 2, 0, 3, 4, 5, 3, 5, 4, 4, 5, 3, 6, 7, 8, 6, 8, 7, 7, 8, 6, 0, 3, 6, 0, 6, 3, 3, 6, 0, 1, 4, 7, 0, 4, 8, 0, 8, 4, 8, 4, 0, 2, 4, 6, 6, 4, 2, 2, 6, 4,};
         
         for (int i = 0; i < cek.length / 3; i++) {
             // Jika ada 2 kotak terisi oleh 'turn' dan 1 kotak kosong, ambil kotak kosong tersebut
